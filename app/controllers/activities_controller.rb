@@ -1,4 +1,5 @@
 class ActivitiesController < ApplicationController
+  # you also need a form in this activites folder
   def index
     
   end
