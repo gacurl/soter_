@@ -1,0 +1,2 @@
+class PlacementStatusesController < ApplicationController
+end
