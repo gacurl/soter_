@@ -1,0 +1,2 @@
+class CommunitySearchController < ApplicationController
+end
