@@ -1,0 +1,2 @@
+class MedicaidProvidersController < ApplicationController
+end
