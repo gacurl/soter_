@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   get 'activities/index'
   get 'activities/new'
   get 'activities/edit'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'static_pages/home'
+  get 'static_pages/help'
 end
