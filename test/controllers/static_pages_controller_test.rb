@@ -3,7 +3,7 @@ require "test_helper"
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-    @base_title = "| Soter"
+    @base_title = "| Soter Cares"
   end
   test "should get home" do
     get static_pages_home_url
