@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       #Login the user and redirect to the user's show page
       reset_session #this resets the session BEFORE the user logs in preventing session fixation attack
-      remember user
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
       log_in user
       redirect_to user
     else
