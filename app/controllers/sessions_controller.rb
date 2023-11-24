@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       reset_session #this resets the session BEFORE the user logs in preventing session fixation attack
       params[:session][:remember_me] == '1' ? remember(@user) : forget(@user)
       log_in @user
-      redirect_to @ user
+      redirect_to @user
     else
       #Create an error message
       flash.now[:danger] = 'Invalid email/password combination'
