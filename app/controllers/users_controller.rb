@@ -28,6 +28,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id]) # how to find the id of the user
+    
   end
 
   def update
